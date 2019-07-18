@@ -1,0 +1,23 @@
+{
+    "Name": "XLRP Fixes",
+    "Enabled": true,
+
+    "DependsOn": ["XLRP", "XLRP-CAB-3030", "XLRP-Flashpoint", "XLRP-UrbanWarfare"],
+
+    "OptionallyDependsOn": [],
+    
+	"Version": "1.4.0.1",
+	"PackagedOn": "2019-07-18T00:00:00Z",
+
+    "Description": "Fixes issues resident in XLRP 1.4b HF3",
+    "Author": "vengefire",
+    "Website": "",
+    "Contact": "Message me at Nexus, and I check the bug posts for XLRP in Exterminator2K's absence.",
+	
+	"Manifest": [
+        { "Type": "UpgradeDef", "Path": "MechEngineer\data\basic\internals", "ShouldMergeJSON": false, "AddToDB": true },
+        { "Type": "UpgradeDef", "Path": "XLRP\XLRPUpgradesME\quirks", "ShouldMergeJSON": false, "AddToDB": true },
+        { "Type": "MechDef", "Path": "", "ShouldMergeJSON": true, "AddToDB": false },
+        { "Type": "VehicleDef", "Path": "vehicle_all", "ShouldMergeJSON": true, "AddToDB": false }
+    ]
+}
